@@ -10,6 +10,7 @@
     "build": "webpack --config webpack.config.js",
     "lint": "eslint src/*.js",
     "doc": "jsdoc src/*.js",
+    "codecov": "codecov",
     "test": "jest"
   },
   "repository": {
@@ -28,6 +29,10 @@
       "...": "..."
     }
   },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "author": "Zhenjun Wang",
   "license": "MIT",
   "bugs": {
@@ -38,6 +43,7 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "babel-loader": "^8.0.0",
+    "codecov": "^3.0.4",
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",

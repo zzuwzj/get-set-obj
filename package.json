@@ -1,7 +1,7 @@
 {
-  "name": "safe-object",
+  "name": "get-set-obj",
   "version": "0.0.1",
-  "description": "Get value from an object safely with specified path.",
+  "description": "Get/set value from/to an object safely with specified path.",
   "main": "index.js",
   "directories": {
     "test": "test"

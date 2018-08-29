@@ -1,0 +1,50 @@
+{
+  "name": "safe-object",
+  "version": "0.0.1",
+  "description": "Get value from an object safely with specified path.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "lint": "eslint src/*.js",
+    "doc": "jsdoc src/*.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzuwzj/safe-object.git"
+  },
+  "keywords": [
+    "util",
+    "js",
+    "object"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  },
+  "author": "Zhenjun Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zzuwzj/safe-object/issues"
+  },
+  "homepage": "https://github.com/zzuwzj/safe-object#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.0.0-rc.13",
+    "jest": "^23.5.0",
+    "jsdoc": "^3.5.5",
+    "webpack": "^4.17.1",
+    "webpack-command": "^0.4.1"
+  }
+}

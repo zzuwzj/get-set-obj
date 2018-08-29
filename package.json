@@ -7,9 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "rollup -c && webpack",
+    "webpack": "webpack --config webpack.config.js",
     "lint": "eslint src/*.js",
-    "doc": "jsdoc src/*.js",
+    "doc": "jsdoc src/*.js -d ./docs/developer",
     "codecov": "codecov",
     "test": "jest"
   },
@@ -50,6 +51,7 @@
     "husky": "^1.0.0-rc.13",
     "jest": "^23.5.0",
     "jsdoc": "^3.5.5",
+    "rollup": "^0.65.0",
     "webpack": "^4.17.1",
     "webpack-command": "^0.4.1"
   }

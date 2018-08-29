@@ -1,5 +1,5 @@
-const SafeObject = require("../lib/index.js")
-const { safeGet } = SafeObject
+const GetSetObj = require("../lib/index.js")
+const { safeGet } = GetSetObj
 
 describe("test a.b.c", () => {
   test("test null", () => {
